@@ -1,1 +1,7 @@
-{{outlet}}
+<h1>QUESTION AND ANSWER SECTION</h1>
+Kindly post your question and check back for answers from other users also, do contribute by answering other questions.
+<ul>
+  {{#each model as |content|}}
+  <li>{{content.question}} {{content.author}} {{content.notes}}</li>
+  {{/each}}
+</ul>

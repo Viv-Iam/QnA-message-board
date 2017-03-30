@@ -1,7 +1,10 @@
 <h1>QUESTION AND ANSWER SECTION</h1>
 Kindly post your question and check back for answers from other users also, do contribute by answering other questions.
-<ul>
+<ol>
   {{#each model as |content|}}
-  <li>{{content.question}} {{content.author}} {{content.notes}}</li>
+  <li>{{content.question}}</li>
+<ul>
+  <li>By {{content.author}} {{content.notes}}</li>
+    </ul>
   {{/each}}
-</ul>
+</ol>

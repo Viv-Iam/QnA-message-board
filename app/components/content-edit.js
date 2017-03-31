@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  updateContentForm: false,
   actions: {
     update(content, params) {
       this.sendAction('update', content, params);

@@ -13,8 +13,13 @@ actions: {
     this.transitionTo('index');
   },
 
-  update(rental, params) {
-    debugger;
+  update(content, params) {
+    //if user does not fill all fields the below ensures prev values stay
+    Object.keys(params).forEach(function(key){
+      if(params[key]!==undefined){
+        content.set(key,params[key]);
+      }
+    });
     content.save();
     this.transitionTo('index');
   },

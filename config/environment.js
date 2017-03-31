@@ -16,7 +16,14 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
+    firebase: {
+      apiKey: "AIzaSyAWDC6e76yZSyvgI9AanyTKSoYKy5WS0RQ",
+      authDomain: "qna-messageboard.firebaseapp.com",
+      databaseURL: "https://qna-messageboard.firebaseio.com",
+      projectId: "qna-messageboard",
+      storageBucket: "qna-messageboard.appspot.com"
+    },
+    
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

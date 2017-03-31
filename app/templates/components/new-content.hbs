@@ -1,1 +1,25 @@
-{{yield}}
+{{#if addNewContent}}
+<h1>New Content</h1>
+<div>
+<form>
+<div class="form-group">
+<label for="question">Question</label>
+  {{input value=question id="question"}} <!-- {{input}} helper allow us to pass in a number of attributes-->
+</div>
+
+<div class="form-group">
+  <label for="author">Author</label>
+  {{input value=author id="author"}}
+</div>
+
+<div class="form-group">
+  <label for="notes">Notes</label>
+  {{input value=notes id="notes"}}
+</div>
+
+<button {{action 'saveContent1'}}>Save</button><!-- submit button has saveRental1 action attached to begin the process of saving the new rental added by a user-->
+</form>
+</div>
+{{else}}
+<button {{action 'contentFormShow'}}>New Content</button>
+{{/if}}

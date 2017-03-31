@@ -2,7 +2,7 @@
 Kindly post your question and check back for answers from other users also, do contribute by answering other questions.
 <ul>
   {{#each model as |content|}}
-  {{content-edit content=content update="update" destroyContent="destroyContent"}}<!--destroyContent maps destroyContent action up form component (on left of =) to the destroyContent action on the route handler-->
+  {{content-edit content=content}} <!--update="update" destroyContent="destroyContent" destroyContent maps destroyContent action up form component (on left of =) to the destroyContent action on the route handler-->
   {{/each}}
 </ul>
 {{new-content saveContent2="saveContent3"}}<!-- here sent new-content component var "saveRental2" set to name of saving action on the route, "saveRental3"-->

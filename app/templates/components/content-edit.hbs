@@ -1,6 +1,6 @@
-<!-- <li>
-  {{#link-to 'content'}}
-{{content.question}} by {{content.author}} {{content.notes}}
+<li>
+  {{#link-to 'content' content.id}}{{content.question}} {{content.author}} {{content.notes}} {{/link-to}}
+<!-- {{content.question}} by {{content.author}} {{content.notes}}
 {{update-content content=content update="update"}}
-<button {{action 'delete' rental}}>Delete</button>
-</li> -->
+<button {{action 'delete' rental}}>Delete</button> -->
+</li>

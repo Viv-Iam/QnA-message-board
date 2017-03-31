@@ -13,6 +13,12 @@ actions: {
     this.transitionTo('index');
   },
 
+  update(rental, params) {
+    debugger;
+    content.save();
+    this.transitionTo('index');
+  },
+
   destroyContent(content) {
     content.destroyContent();
     this.transitonTo('index');//this.transitionTo('index') is called to return index page after a rental is deleted

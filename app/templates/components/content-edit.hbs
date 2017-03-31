@@ -1,4 +1,5 @@
 <li>
 {{content.question}} by {{content.author}} {{content.notes}}
-<button {{action 'delete' rental}}>Delete Rental</button>
+{{update-rental rental=rental update="update"}}
+<button {{action 'delete' rental}}>Delete</button>
 </li>

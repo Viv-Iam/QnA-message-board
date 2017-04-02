@@ -1,7 +1,5 @@
-# qn-a-message-board
-
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+# QnA MESSAGE-BOARD
+This is an Ember Application
 
 ## Prerequisites
 
@@ -41,8 +39,12 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
-
+* Create a git repository
+* Push your project on github (git push -u origin master)
+* Keep saving, updating (git add .), commiting (git commit -m "commit") and pushing(git push -u origin master)
+* When ready to deploy create new branch *ghpages*(git branch gh-pages)
+* Check out to gh-pages(git checkout gh-pages)
+* Pull from master
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)

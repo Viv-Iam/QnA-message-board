@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('content', params.rental_id);
+    return this.store.findRecord('content', params.content_id);
   },
   actions: {
     update(content, params) {
@@ -17,8 +17,8 @@ export default Ember.Route.extend({
     },
 
     destroyContent(content) {
-      content.destroyContent();
-      this.transitonTo('index');//this.transitionTo('index') is called to return index page after a rental is deleted
+      content.destroyRecord();
+      this.transitionTo('index');//this.transitionTo('index') is called to return index page after a rental is deleted
     }
   }
 });

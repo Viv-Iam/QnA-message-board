@@ -1,2 +1,7 @@
 {{content.notes}}
+<ul>
+{{#each content.responses as |response|}}
+{{content-edit response=response}}
+{{/each}}
+</ul>
 <button{{action 'delete' content}}>Delete</button>

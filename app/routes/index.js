@@ -15,12 +15,12 @@ actions: {
     var newContent = this.store.createRecord('content', params);
     newContent.save();
     this.transitionTo('index');
-  },
-  saveAnswer(params) {
-    var newAnswer = this.store.createRecord('response', params);
-    newAnswer.save();
-    this.transitionTo('index');
   }
+  // saveAnswer(params) {
+  //   var newAnswer = this.store.createRecord('response', params);
+  //   newAnswer.save();
+  //   this.transitionTo('index');
+  // }
 }
 });
 // table names in Firebase will be a plural model name, and the model hooks in your routes will refer to the singular model name.

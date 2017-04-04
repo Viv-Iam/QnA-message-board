@@ -26,8 +26,19 @@ export default Ember.Route.extend({
     },
 
     destroyContent(content) {
-      content.destroyRecord();
-      this.transitionTo('index');//this.transitionTo('index') is called to return index page after a rental is deleted
+      var response_deletions = content.get('responses').map(function(response) {
+        return response.destroyRecord();
+      });
+      Ember.RSVP.all(response_deletions).then(function(){
+        return content.destroyRecord();
+      });
+      this.transitionTo('index');
+      // content.destroyRecord();
+      // this.transitionTo('index');//this.transitionTo('index') is called to return index page after a rental is deleted
+    },
+    destroyResponse(response) {
+      response.destroyRecord();
+      this.transitionTo('index');
     }
   }
 });

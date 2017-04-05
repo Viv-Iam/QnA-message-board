@@ -1,5 +1,5 @@
 {{#if addNewAnswer}}
-<h1>New Answer</h1>
+<h2>New Answer</h2>
 <div>
   <form>
     <div  class="form-group">
@@ -10,9 +10,9 @@
   <label for="author">Author</label>
   {{input value=author id="author"}}
 </div>
-<button {{action 'saveAnswer'}}>Save</button>
+<button class="btn-success" {{action 'saveAnswer'}}>Save</button>
   </form>
 </div>
 {{else}}
-<button {{action 'answerFormShow'}}>New Answer</button>
+<button class="btn-info" {{action 'answerFormShow'}}>New Answer</button>
 {{/if}}

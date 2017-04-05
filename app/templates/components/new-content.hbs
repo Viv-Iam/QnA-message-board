@@ -1,5 +1,5 @@
 {{#if addNewContent}}
-<h1>New Content</h1>
+<h1>New Question</h1>
 <div>
 <form>
 <div class="form-group">
@@ -17,9 +17,9 @@
   {{input value=notes id="notes"}}
 </div>
 
-<button {{action 'saveContent1'}}>Save</button><!-- submit button has saveRental1 action attached to begin the process of saving the new rental added by a user-->
+<button class="btn-success" {{action 'saveContent1'}}>Save</button><!-- submit button has saveRental1 action attached to begin the process of saving the new rental added by a user-->
 </form>
 </div>
 {{else}}
-<button {{action 'contentFormShow'}}>New Question</button>
+<button  class="btn-info" {{action 'contentFormShow'}}>New Question</button>
 {{/if}}

@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   combined: Ember.computed('content.notes', 'content.author', function(){
-    return this.get('content.notes') + '-' + this.get('content.author');
+    return this.get('content.notes') +' by '+ this.get('content.author');
   }),
   actions: {
     delete(content) {

@@ -1,4 +1,5 @@
-<h2><em>{{model.question}}</em> <strong>by {{model.author}}</strong></h2> <br>
-{{update-content content=model update="update"}} <br>
+<h2><em>{{model.question}}</em></h2>{{update-content content=model update="update"}} <br>
+ <br>
 {{content-detail content=model destroyContent="destroyContent" destroyResponse="destroyResponse"}}
 {{new-response saveAnswer="saveAnswer" content=model}}
+<strong>by {{model.author}}</strong>

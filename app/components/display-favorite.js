@@ -5,6 +5,9 @@ export default Ember.Component.extend({
   actions: {
     removeFrom(content) {
       this.get('favoriteQuestion').remove(content);
+    },
+    removeAll(content) {
+      this.get('favoriteQuestion').empty(content);
     }
   }
 });

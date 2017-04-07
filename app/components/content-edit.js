@@ -7,5 +7,6 @@ favoriteQuestion: Ember.inject.service(),
       this.get('favoriteQuestion').add(content);
         // this.sendAction('addToFav', content);
     }
+
   }
 });

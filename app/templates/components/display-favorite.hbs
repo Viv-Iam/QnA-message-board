@@ -1,1 +1,5 @@
-{{yield}}
+{{#each favoriteQuestion.contents as |content|}}
+<ul>
+<li>{{content.question}}: {{content.author}}</li>
+</ul>
+{{/each}}

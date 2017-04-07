@@ -1,11 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-favoriteQuestion: Ember.Component.extend({
+favoriteQuestion: Ember.inject.service(),
   actions: {
-    addToFav(fav) {
-      this.get('favoriteQuestion').add(fav);
+    addToFav(content) {
+      this.get('favoriteQuestion').add(content);
+        // this.sendAction('addToFav', content);
     }
   }
-})
 });

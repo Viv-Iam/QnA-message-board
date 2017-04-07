@@ -1,8 +1,6 @@
 {{#each favoriteQuestion.contents as |content|}}
-<li>
-  {{#link-to 'content' content.id}}{{content.question}}{{/link-to}}
+<ol><li>{{#link-to 'content' content.id}}{{content.question}}{{/link-to}}</li></ol>
 <ul>
   <li>by {{content.author}}</li>
-  </ul>
-</li>
+</ul>
 {{/each}}
